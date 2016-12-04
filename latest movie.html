@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Latest Movies</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="main">
+ <h1 style="color:blue; text-align:center;">International 5 star Movie Review</h1>
+  </div>
+  <nav class="navbar navbar-inverse  ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="latest movie.html">Latest Movies</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  </div>
+</nav>
+  	
+<div id="site_content">		
+
+      <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="100%" height="300" src="images/home_1.jpg" alt="&quot;Rent all the latest DVD&quot;" /></li>
+        </ul> 
+	  </div>	
+    
+	  </div>	
+   <div>
+         <h1 style="text-align:center;">
+           Latest Movies
+         </h1>
+       </div>
+  
+  
+<div class="container">
+ <div class="row">
+    <div class="col-sm-4">
+   <div class="img">
+				 <a target="_blank"><img src="images/3.jpg" alt="Movies" width="300" height="300" href="https://www.youtube.com/watch?v=Aojd0pE_MJ8"></a>
+				 <div class="desc"><b>Snitch</b></div>
+				 
+     <body>
+       
+      
+				 	<div id="demo1"></div>
+
+						<button type="button" onclick="loadXMLDoc1()">View Details</button>
+
+						<script>
+								function loadXMLDoc1() {
+								  var xhttp = new XMLHttpRequest();
+								  xhttp.onreadystatechange = function() {
+								    if (xhttp.readyState == 4 && xhttp.status == 200) {
+								      document.getElementById("demo1").innerHTML = xhttp.responseText;
+								    }
+								  };
+								  xhttp.open("GET", "details2.xml", true);
+								  xhttp.send();
+								}
+						</script>
+				 </body>
+				</div>
+   </div>
+  <div class="col-sm-4">
+   <div class="img">
+				 <a target="_blank"><img src="images/4.jpg" alt="Movies" width="300" height="300"></a>
+					<div class="desc"><b>FAST AND FURIOUS 6</b></div>
+					<body>
+				 	<div id="demo2"></div>
+
+						<button type="button" onclick="loadXMLDoc2()">View Details</button>
+
+						<script>
+								function loadXMLDoc2() {
+								  var xhttp = new XMLHttpRequest();
+								  xhttp.onreadystatechange = function() {
+								    if (xhttp.readyState == 4 && xhttp.status == 200) {
+								      document.getElementById("demo2").innerHTML = xhttp.responseText;
+								    }
+								  };
+								  xhttp.open("GET", "details3.xml", true);
+								  xhttp.send();
+								}
+						</script>
+				 </body>
+			    </div>
+   </div>
+    <div class="col-sm-4">
+
+   <div class="img">
+					 <a target="_blank"><img src="images/PiratesOfCaribbean.jpg" alt="Movies" width="300" height="300"></a>
+					 <div class="desc"><b>Pirates Of Caribbean</b></div>
+					 	<body>
+				 	<div id="demo3"></div>
+
+						<button type="button" onclick="loadXMLDoc3()">View Details</button>
+
+						<script>
+								function loadXMLDoc3() {
+								  var xhttp = new XMLHttpRequest();
+								  xhttp.onreadystatechange = function() {
+								    if (xhttp.readyState == 4 && xhttp.status == 200) {
+								      document.getElementById("demo3").innerHTML = xhttp.responseText;
+								    }
+								  };
+								  xhttp.open("GET", "details4.xml", true);
+								  xhttp.send();
+								}
+						</script>
+				 </body>
+				</div>
+   </div>
+ </div>
+</div>
+   <form>
+    <div class="form-group">
+    <label for="name">Full Name:</label>
+    <input type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  
+   <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+     <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</body>
+</html>
